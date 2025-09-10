@@ -3,14 +3,15 @@
 <title>Hello Page</title>
 </head>
 <body>
-        <?php
-        if (isset($_GET['name'])) {
-            $name = htmlspecialchars($_GET['name']); 
-            echo "<h1>Hello, $name!</h1>";
-        } else {
-            echo "<h1>Hello, Rahul</h1>";
-        }
-    ?>
 
-</body>
+<form action="">
+Name<input type="text" name="name"><br>
+<button>Submit</button>
+</form>    
+</body>         
 </html>
+
+<?php
+   $name= $_GET['name'];    
+      echo "hello $name";
+?>
